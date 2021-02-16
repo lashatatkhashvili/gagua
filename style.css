@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+header ul {
+  display: flex;
+  margin: 20px;
+}
+
+header li {
+  list-style: none;
+  padding: 10px;
+}
+
+header a {
+  color: rgba(0, 0, 0, 0.23);
+}
+
+header li > a:hover {
+  color: green;
+}
+
+.logo-socialMedia {
+  display: flex;
+}
+
+.visit-private a {
+  text-decoration: none;
+  margin: 15px;
+}
+
+.visit {
+  color: #244c5b;
+}
+
+.private {
+  background: #fbad1e;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 20px 20px 20px 0;
+}
+
+.visit:hover {
+  color: #3f7e96;
+}
+
+.private:hover {
+  background: #a06b09;
+}
+
+/* navbar */
+
+nav {
+  background: url(./photos/nav-background.png) no-repeat center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+}
+
+.navbar > li {
+  padding: 25px 10px;
+}
+
+.navbar-form {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.navbar-form select {
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px 20px 20px 0;
+  margin-left: 20px;
+  padding: 10px;
+  background: transparent;
+}
+
+.navbar-form i {
+  color: white;
+  font-size: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.sub-menu ul {
+  margin-left: 200px;
+}
+
+.sub-menu li {
+  padding: 10px;
+}
+
+.sub-menu a:hover {
+  color: rgb(184, 181, 181);
+}
+.navbar > li:hover {
+  background: rgba(0, 128, 0, 0.219);
+}
+nav li:hover .sub-menu {
+  display: inherit;
+  margin-top: 25px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #244c5b;
+  justify-content: left;
+}
+
+@media only screen and (max-width: 1250px) {
+  .navbar a {
+    font-size: 15px;
+  }
+}
