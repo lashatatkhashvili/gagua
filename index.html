@@ -7,138 +7,218 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>გაგუას კლინიკა</title>
   </head>
   <body>
-    <header>
-      <div class="logo-socialMedia">
-        <img src="./photos/logo.svg" alt="logo" />
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/" target="_blank">
-              <i class="fa fa-youtube-play"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/" target="_blank">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
+    <header class="header">
+      <div class="header__top-wrapper">
+        <div class="header__logo-wrapper">
+          <h1 class="header__logo">
+            <a href="#"><img src="./photos/logo.svg" alt="logo" /></a>
+          </h1>
+
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="header__list-social"
+              >
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="header__list-social"
+              >
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="header__list-social"
+              >
+                <i class="fa fa-youtube-play"></i>
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="header__list-social"
+              >
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="header__list-social"
+              >
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__visit-wrapper">
+          <a href="#" class="header__visit">ვიზიტზე ჩაწერა</a>
+          <a href="#" class="header__private">პირადი კაბინეტი</a>
+        </div>
       </div>
 
-      <div class="visit-private">
-        <a href="#" class="visit">ვიზიტზე ჩაწერა</a>
-        <a href="#" class="private">პირადი კაბინეტი</a>
+      <div class="header-nav__wrapper">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">ჩვენს შესახებ</a>
+              <div class="sub-menu__wrapper">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ჩვენი ისტორია</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">სიახლეები</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">პაციენტების ისტორია</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">ჩვენი ექიმები</a>
+              <div class="sub-menu__wrapper">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ხელმძღვანელობა</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">გინეკოლოგები</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ანესთეზიოლოგები</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">პედიატრები</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">სერვისები</a>
+              <div class="sub-menu__wrapper">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ამბულატორია</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">მშობიარობა</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ახალშობილები</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">პედიატრია</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">მამოლოგია</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">ფასები</a>
+              <div class="sub-menu__wrapper">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ამბულატორია</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">მშობიარობა</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">3D ტური</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">რჩევები</a>
+              <div class="sub-menu__wrapper">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ორსულობამდე</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ორსულებისთვის</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">სასარგებლო</a>
+              <div class="sub-menu__wrapper">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ვიზიტზე ჩაწერია</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">აპლიკაცია</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ბავშვის სახელი</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">კონტაქტი</a>
+              <div class="sub-menu__wrapper">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">კონფიდენციალურობა</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">ონლაინ გადახდა</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <form action="POST" class="nav-form">
+            <a href="#" class="nav-form__search"
+              ><i class="fa fa-search"></i
+            ></a>
+            <select class="nav-form__select">
+              <option value="ge" class="nav-form__select-option">GE</option>
+              <option value="en" class="nav-form__select-option">EN</option>
+            </select>
+          </form>
+        </nav>
       </div>
     </header>
-    <nav>
-      <ul class="navbar">
-        <li>
-          <a href="#">ჩვენს შესახებ</a>
-          <div class="sub-menu">
-            <ul>
-              <li><a href="#">ჩვენი ისტორია</a></li>
-              <li><a href="#">სიახლეები</a></li>
-              <li><a href="#">პაციენტების ისტორია</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <a href="#">ჩვენი ექიმები</a>
-          <div class="sub-menu">
-            <ul>
-              <li><a href="#">ხელმძღვანელობა</a></li>
-              <li><a href="#">გინეკოლოგები</a></li>
-              <li><a href="#">ანესთეზიოლოგები</a></li>
-              <li><a href="#">პედიატრები</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <a href="#">სევისები</a>
-          <div class="sub-menu">
-            <ul>
-              <li><a href="#">ამბულატორია</a></li>
-              <li><a href="#">მშობიარობა</a></li>
-              <li><a href="#">ახალშობილები</a></li>
-              <li><a href="#">პედიატრია</a></li>
-              <li><a href="#">მამოლოგია</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <a href="#">ფასები</a>
-          <div class="sub-menu">
-            <ul>
-              <li><a href="#">ამბულატორია</a></li>
-              <li><a href="#">მშობიარობა</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <a href="#">3D ტური</a>
-        </li>
-
-        <li>
-          <a href="#">რჩევები</a>
-          <div class="sub-menu">
-            <ul>
-              <li><a href="#">ორსულობამდე</a></li>
-              <li><a href="#">ორსულებისთვის</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <a href="#">სასარგებლო</a>
-          <div class="sub-menu">
-            <ul>
-              <li><a href="#">ვიზიტზე ჩაწერია</a></li>
-              <li><a href="#">აპლიკაცია</a></li>
-              <li><a href="#">ბავშვის სახელი</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <a href="#">კონტაქტი</a>
-          <div class="sub-menu">
-            <ul>
-              <li><a href="#">კონფიდენციალურობა</a></li>
-              <li><a href="#">ონლაინ გადახდა</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <form action="POST" class="navbar-form">
-        <a href="#"><i class="fa fa-search"></i></a>
-        <select>
-          <option value="ge">GE</option>
-          <option value="en">EN</option>
-        </select>
-      </form>
-    </nav>
   </body>
 </html>
