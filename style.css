@@ -76,7 +76,7 @@ a {
   align-items: center;
 }
 
-.sub-menu__wrapper {
+.sub-menu-wrapper {
   display: none;
 }
 
@@ -98,7 +98,7 @@ a {
   background: rgba(0, 128, 0, 0.219);
 }
 
-.nav__list-item:hover .sub-menu__wrapper {
+.nav__list-item:hover .sub-menu-wrapper {
   display: inherit;
   margin-top: 25px;
   position: absolute;
